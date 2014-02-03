@@ -6,6 +6,8 @@ A tiny social networking application for android operating system.
 Functionalities:
 	1. User profile management.
 	2. User seach.
+	3. Group chat.
+	4. News feed.
 
 Backend:
 	1. Desktop server running on Java Virtual Machine and having graph as backend data structure.
