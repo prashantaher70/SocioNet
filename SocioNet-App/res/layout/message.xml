@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/messageBodyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="165dp"
+        android:ems="10"
+        android:height="120dp"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/messageBodyEditText"
+        android:layout_marginTop="56dp"
+        android:text="To" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/messageBodyEditText"
+        android:layout_alignTop="@+id/messageBodyEditText"
+        android:text="Message Body" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sendButton"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/sendButton"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/messageBodyEditText"
+        android:layout_marginTop="25dp"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/toUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/messageBodyEditText"
+        android:layout_alignRight="@+id/messageBodyEditText"
+        android:layout_marginBottom="34dp"
+        android:height="30dp"
+        android:text="toUserName" />
+
+</RelativeLayout>

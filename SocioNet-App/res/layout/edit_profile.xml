@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/proPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/profile_sam" />
+
+    <EditText
+        android:id="@+id/cStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/bSelect"
+        android:layout_below="@+id/proPic"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Status" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/cStatus"
+        android:layout_below="@+id/bStatus"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="City" />
+
+    <ImageButton
+        android:id="@+id/bCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bStatus"
+        android:layout_alignTop="@+id/cCity"
+        android:src="@drawable/upload" />
+
+    <EditText
+        android:id="@+id/cPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/cCity"
+        android:layout_below="@+id/bCity"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#888888" />
+
+    <ImageButton
+        android:id="@+id/bSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bSendPic"
+        android:layout_toLeftOf="@+id/bSendPic"
+        android:src="@drawable/friends" />
+
+    <ImageButton
+        android:id="@+id/bSendPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/proPic"
+        android:layout_marginBottom="23dp"
+        android:layout_toLeftOf="@+id/view1"
+        android:src="@drawable/upload" />
+
+    <ImageButton
+        android:id="@+id/bStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cStatus"
+        android:layout_toRightOf="@+id/bSelect"
+        android:src="@drawable/upload" />
+
+    <ImageButton
+        android:id="@+id/bPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cPass"
+        android:layout_toRightOf="@+id/bSelect"
+        android:src="@drawable/upload" />
+
+</RelativeLayout>

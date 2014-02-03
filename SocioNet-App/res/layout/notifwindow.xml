@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:text="Message"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/mBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="bkjszbckjb absdhiuhaiuh \nahadsi hiads\n ahsuidhiuahsdiuhasdasdhiuashd\nashdiuashdiuhasdiuhjhguhasduhasiuhdiuashdiuashduiashduihasdiuhsaiudhsaiudhasiuhdaiushdasiuhdiuashdiuashdiusahd" />
+
+    <TextView
+        android:id="@+id/fUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mBody"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:text="From User"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
